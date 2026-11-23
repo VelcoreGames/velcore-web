@@ -7,8 +7,11 @@ Este repositorio es la **única fuente** del sitio. Lo editan Javier, Claude y C
 ## Estructura
 
 ```
-index.html      Página completa: HTML, CSS y JavaScript en un solo archivo
+index.html      Sitio de Velcore: HTML, CSS y JavaScript en un solo archivo
 media/          Logos, logos de clientes, capturas de proyectos, favicon e imagen para redes
+Xpaa/           Página del cliente Xpaá Cosmetología Integral → velcore.com.mx/Xpaa/
+  index.html    Página completa de Xpaá (un solo archivo)
+  media/        Fotos, logo (SVG), QR de la ruta, favicon e imagen para redes
 README.md       Este archivo
 ```
 
@@ -31,3 +34,14 @@ Es un sitio estático: no hay paso de compilación, dependencias ni `package.jso
 
 - Hostinger despliega `main` automáticamente (despliegue estático desde GitHub).
 - Para probar cambios grandes sin publicarlos, trabaja en otra rama y únela a `main` cuando esté aprobada.
+
+## Página de Xpaá (`Xpaa/`)
+
+Es un cliente con su propia identidad; las reglas 2 a 4 de arriba (bilingüe, modo oscuro, marca Velcore) **no** aplican aquí.
+
+- Solo español, tema claro.
+- Colores y tipografías de Xpaá, definidos en `:root` al inicio de su `<style>`: oliva `#738b4c` / `#435831`, tierra `#8a6d5a`, taupe `#b6a69e`, crema `#f7f4ee`; DM Serif Display (títulos) y Montserrat (texto).
+- WhatsApp de Xpaá: `523319407434`. Cada servicio tiene su propio mensaje prellenado.
+- Precios, duraciones y descripciones vienen de la información de la cosmetóloga. No agregues promesas de resultados ("sin dolor", "garantizado", porcentajes) sin que ella lo confirme.
+- La carpeta se llama `Xpaa` con X mayúscula: la dirección `velcore.com.mx/Xpaa` distingue mayúsculas.
+
