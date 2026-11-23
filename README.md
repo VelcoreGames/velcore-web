@@ -12,7 +12,10 @@ media/          Logos, logos de clientes, capturas de proyectos, favicon e image
 Xpaa/           Página del cliente Xpaá Cosmetología Integral → velcore.com.mx/Xpaa/
   index.html    Página completa de Xpaá (un solo archivo)
   media/        Fotos, logo (SVG), QR de la ruta, favicon e imagen para redes
-README.md       Este archivo
+README.md       Este archivo (no se publica)
+robots.txt      Indicaciones para buscadores
+sitemap.xml     Mapa del sitio para Google
+.htaccess       Configuración del servidor (oculta archivos internos, caché)
 ```
 
 Es un sitio estático: no hay paso de compilación, dependencias ni `package.json`. Lo que está en `main` es exactamente lo que se publica.
