@@ -25,7 +25,7 @@
   menuBtn.addEventListener('click', () => toggleMenu(menu.hidden));
   menu.addEventListener('click', e => { if (e.target.closest('a')) toggleMenu(false); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !menu.hidden) toggleMenu(false); });
-  addEventListener('resize', () => { if (innerWidth > 1100 && !menu.hidden) toggleMenu(false); });
+  addEventListener('resize', () => { if (innerWidth > 1280 && !menu.hidden) toggleMenu(false); });
   const onScroll = () => header.classList.toggle('scrolled', scrollY > 8);
   addEventListener('scroll', onScroll, { passive:true }); onScroll();
   const meta = document.querySelector('meta[name="theme-color"]'); if (meta && root.dataset.mode === 'light') meta.content = '#ffffff';

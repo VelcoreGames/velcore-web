@@ -536,6 +536,7 @@ dialog.aviso::backdrop{background:rgba(3,4,10,.66);-webkit-backdrop-filter:blur(
   .marquee-set[aria-hidden="true"]{display:none}
   .marquee{-webkit-mask-image:none;mask-image:none}
 }
+.svc-more{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:var(--accent-ink);font:600 .9rem/1.2 var(--font-display);position:relative;z-index:1}.svc-more .ic{width:17px;height:17px;transition:transform .3s var(--ease)}.svc-more:hover .ic{transform:translate(2px,-2px)}.mp-panel .svc-more{margin-top:18px}.dev-links{display:flex;flex-wrap:wrap;gap:6px 24px}.dev-links .svc-more{margin-top:0}
 
 /* ================= Páginas de servicio ================= */
 .crumbs ol{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font:500 .74rem/1.3 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
@@ -577,4 +578,6 @@ dialog.aviso::backdrop{background:rgba(3,4,10,.66);-webkit-backdrop-filter:blur(
 .svc-more{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:var(--accent-ink);font:600 .9rem/1.2 var(--font-display);position:relative;z-index:1}
 .svc-more .ic{width:17px;height:17px;transition:transform .3s var(--ease)}
 .svc-more:hover .ic{transform:translate(2px,-2px)}
+.nav a{white-space:nowrap}
+@media (max-width:1280px){.sp .nav{display:none}.sp .menu-btn{display:grid}.sp .header-tools{margin-left:auto}}
 .nf{min-height:60vh;display:grid;align-content:center;gap:22px;justify-items:start}
