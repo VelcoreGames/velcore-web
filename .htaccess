@@ -2,6 +2,13 @@
 DirectoryIndex index.html
 Options -Indexes
 
+# Una sola dirección para Google: www.velcore.com.mx -> https://velcore.com.mx
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.velcore\.com\.mx$ [NC]
+  RewriteRule ^(.*)$ https://velcore.com.mx/$1 [R=301,L]
+</IfModule>
+
 # No servir archivos internos del repositorio
 <FilesMatch "^(README\.md|\.gitignore)$">
   Require all denied
