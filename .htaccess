@@ -7,7 +7,28 @@ Options -Indexes
   RewriteEngine On
   RewriteCond %{HTTP_HOST} ^www\.velcore\.com\.mx$ [NC]
   RewriteRule ^(.*)$ https://velcore.com.mx/$1 [R=301,L]
+
+  # Páginas del sitio anterior (WordPress) que Google aún visita -> su equivalente actual
+  RewriteRule ^(contactanos|contacto|contact-us)/?$ https://velcore.com.mx/#contacto [R=301,L,NE]
+  RewriteRule ^elementor3/it-service/contact-us/?$ https://velcore.com.mx/#contacto [R=301,L,NE]
+  RewriteRule ^nosotros/?$ https://velcore.com.mx/#nosotros [R=301,L,NE]
+  RewriteRule ^preguntas-frecuentes/?$ https://velcore.com.mx/#faq [R=301,L,NE]
+  RewriteRule ^proyectos/?$ https://velcore.com.mx/#proyectos [R=301,L,NE]
+  RewriteRule ^(servicios|branding-diseno|branding)/?$ https://velcore.com.mx/#servicios [R=301,L,NE]
+  RewriteRule ^(mercadolibre|mercado_libre|gestion-mercado-libre)/?$ https://velcore.com.mx/mercado-libre/ [R=301,L]
+  RewriteRule ^(desarrollo|diseno-web|paginas-web)/?$ https://velcore.com.mx/desarrollo-web/ [R=301,L]
+
+  # Contenido de plantilla del sitio anterior que ya no existe: 410 para que Google lo retire pronto
+  RewriteRule ^20[0-9][0-9]/ - [G,L]
+  RewriteRule ^(author|comments|staticblocks|elementor[0-9]*|assets)/ - [G,L]
+  RewriteRule ^wp- - [G,L]
+  RewriteRule ^(.+/)?feed/?$ - [G,L]
+  RewriteRule ^(unlocking-team-potential|smarter-code-ahead|modern-development-tools|devs-toolkit|elevate-your-enterprise|cloud-evolution|the-future-of-cloud-computing|leveraging-ai-and-machine|fortifying-your-defenses)[^/]*(/.*)?$ - [G,L]
 </IfModule>
+
+# Página de error con enlaces a los servicios
+ErrorDocument 404 /404.html
+ErrorDocument 410 /404.html
 
 # No servir archivos internos del repositorio
 <FilesMatch "^(README\.md|\.gitignore)$">
@@ -22,5 +43,13 @@ RedirectMatch 404 /\.git
   ExpiresByType image/png "access plus 30 days"
   ExpiresByType image/jpeg "access plus 30 days"
   ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType text/javascript "access plus 30 days"
   ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# Compresión
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript image/svg+xml application/json application/xml
 </IfModule>

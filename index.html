@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Roboto:wght@400;500;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://velcore.com.mx/#sitio","name":"Velcore","alternateName":["Velcore MX","velcore.com.mx"],"url":"https://velcore.com.mx/","inLanguage":["es-MX","en"],"publisher":{"@id":"https://velcore.com.mx/#organizacion"}},{"@type":"Organization","name":"Velcore","url":"https://velcore.com.mx/","logo":{"@type":"ImageObject","url":"https://velcore.com.mx/media/velcore-simbolo.webp"},"image":"https://velcore.com.mx/media/og-velcore.jpg","description":"Velcore es una agencia digital de Guadalajara y CDMX: gestión integral de Mercado Libre y Amazon, desarrollo web, integraciones y soluciones digitales para negocios que buscan crecer.","foundingDate":"2019","email":"contacto@velcore.com.mx","telephone":"+52 1 33 4721 6023","areaServed":"MX","address":[{"@type":"PostalAddress","addressLocality":"Guadalajara","addressRegion":"Jalisco","addressCountry":"MX"},{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"}],"sameAs":["https://www.facebook.com/profile.php?id=61584658633203","https://www.instagram.com/velcoremkt/"],"@id":"https://velcore.com.mx/#organizacion","alternateName":["Velcore MX","Velcore Agencia Digital"],"contactPoint":[{"@type":"ContactPoint","telephone":"+52 1 33 4721 6023","email":"contacto@velcore.com.mx","contactType":"sales","areaServed":"MX","availableLanguage":["es","en"]}],"knowsAbout":["Mercado Libre","Amazon","Desarrollo web","Integraciones","Marketing digital","Branding","Redes sociales"]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://velcore.com.mx/#sitio","name":"Velcore","alternateName":["Velcore MX","velcore.com.mx"],"url":"https://velcore.com.mx/","inLanguage":["es-MX","en"],"publisher":{"@id":"https://velcore.com.mx/#organizacion"}},{"@type":"Organization","name":"Velcore","url":"https://velcore.com.mx/","logo":{"@type":"ImageObject","url":"https://velcore.com.mx/media/velcore-simbolo.webp"},"image":"https://velcore.com.mx/media/og-velcore.jpg","description":"Velcore es una agencia digital de Guadalajara y CDMX: gestión integral de Mercado Libre y Amazon, desarrollo web, integraciones y soluciones digitales para negocios que buscan crecer.","foundingDate":"2019","email":"contacto@velcore.com.mx","telephone":"+52 1 33 4721 6023","areaServed":"MX","address":[{"@type":"PostalAddress","addressLocality":"Guadalajara","addressRegion":"Jalisco","addressCountry":"MX"},{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"}],"sameAs":["https://www.facebook.com/profile.php?id=61584658633203","https://www.instagram.com/velcoremkt/"],"@id":"https://velcore.com.mx/#organizacion","alternateName":["Velcore MX","Velcore Agencia Digital"],"contactPoint":[{"@type":"ContactPoint","telephone":"+52 1 33 4721 6023","email":"contacto@velcore.com.mx","contactType":"sales","areaServed":"MX","availableLanguage":["es","en"]}],"knowsAbout":["Mercado Libre","Amazon","Desarrollo web","Integraciones","Marketing digital","Branding","Redes sociales"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicios de Velcore","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Gestión de cuentas de Mercado Libre","url":"https://velcore.com.mx/mercado-libre/","provider":{"@id":"https://velcore.com.mx/#organizacion"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Gestión de cuentas de Amazon","url":"https://velcore.com.mx/amazon/","provider":{"@id":"https://velcore.com.mx/#organizacion"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Desarrollo de páginas web y tiendas en línea","url":"https://velcore.com.mx/desarrollo-web/","provider":{"@id":"https://velcore.com.mx/#organizacion"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Integraciones, automatización y soluciones digitales a la medida","url":"https://velcore.com.mx/soluciones-digitales/","provider":{"@id":"https://velcore.com.mx/#organizacion"}}}]}}]}
 </script>
 <script>
 try{var m=localStorage.getItem('velcore-mode');if(m==='light'||m==='dark')document.documentElement.setAttribute('data-mode',m);var l=localStorage.getItem('velcore-lang');if(l==='en'){document.documentElement.setAttribute('data-lang','en');document.documentElement.lang='en';}}catch(e){}
@@ -566,6 +566,7 @@ dialog.aviso::backdrop{background:rgba(3,4,10,.66);-webkit-backdrop-filter:blur(
   .marquee-set[aria-hidden="true"]{display:none}
   .marquee{-webkit-mask-image:none;mask-image:none}
 }
+.svc-more{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:var(--accent-ink);font:600 .9rem/1.2 var(--font-display);position:relative;z-index:1}.svc-more .ic{width:17px;height:17px;transition:transform .3s var(--ease)}.svc-more:hover .ic{transform:translate(2px,-2px)}.mp-panel .svc-more{margin-top:18px}.dev-links{display:flex;flex-wrap:wrap;gap:6px 24px}.dev-links .svc-more{margin-top:0}
 </style>
 </head>
 <body>
@@ -772,12 +773,14 @@ dialog.aviso::backdrop{background:rgba(3,4,10,.66);-webkit-backdrop-filter:blur(
           <h3>Mercado Libre</h3>
           <p><span lang="es">Una cuenta bien gestionada, desde el catálogo hasta la operación diaria.</span><span lang="en">A well-managed account, from the catalog to day-to-day operations.</span></p>
           <ul class="tags"><li><span lang="es">Estrategia</span><span lang="en">Strategy</span></li><li><span lang="es">Catálogo</span><span lang="en">Catalog</span></li><li>Mercado Ads</li></ul>
+          <a class="svc-more" href="/mercado-libre/"><span lang="es">Gestión de Mercado Libre</span><span lang="en">Mercado Libre management</span><svg class="ic"><use href="#i-arrow"/></svg></a>
         </article>
         <article class="svc-card">
           <div class="svc-top"><span class="svc-n">02</span><span class="svc-kicker"><span lang="es">Gestión integral</span><span lang="en">Full management</span></span><span class="svc-ic"><svg class="ic"><use href="#i-box"/></svg></span></div>
           <h3>Amazon</h3>
           <p><span lang="es">Catálogo, contenido y operación alineados con los objetivos de tu negocio.</span><span lang="en">Catalog, content and operations aligned with your business goals.</span></p>
           <ul class="tags"><li>Listings</li><li><span lang="es">Campañas</span><span lang="en">Campaigns</span></li><li><span lang="es">Operación</span><span lang="en">Operations</span></li></ul>
+          <a class="svc-more" href="/amazon/"><span lang="es">Gestión de Amazon</span><span lang="en">Amazon management</span><svg class="ic"><use href="#i-arrow"/></svg></a>
         </article>
       </div>
       <div class="svc-group">
@@ -787,12 +790,14 @@ dialog.aviso::backdrop{background:rgba(3,4,10,.66);-webkit-backdrop-filter:blur(
           <h3><span lang="es">Desarrollo web</span><span lang="en">Web development</span></h3>
           <p><span lang="es">No adaptamos tu negocio a una plantilla. Construimos alrededor de lo que necesitas resolver.</span><span lang="en">We don’t squeeze your business into a template. We build around what you need to solve.</span></p>
           <ul class="tags"><li><span lang="es">Sitios</span><span lang="en">Websites</span></li><li>E-commerce</li><li><span lang="es">Aplicaciones</span><span lang="en">Apps</span></li></ul>
+          <a class="svc-more" href="/desarrollo-web/"><span lang="es">Desarrollo de páginas web</span><span lang="en">Web development</span><svg class="ic"><use href="#i-arrow"/></svg></a>
         </article>
         <article class="svc-card">
           <div class="svc-top"><span class="svc-n">04</span><span class="svc-kicker"><span lang="es">A la medida de tu negocio</span><span lang="en">Tailored to your business</span></span><span class="svc-ic"><svg class="ic"><use href="#i-nodes"/></svg></span></div>
           <h3><span lang="es">Soluciones digitales</span><span lang="en">Digital solutions</span></h3>
           <p><span lang="es">Conectamos herramientas, simplificamos procesos y construimos lo que hace falta.</span><span lang="en">We connect tools, simplify processes and build whatever is missing.</span></p>
           <ul class="tags"><li><span lang="es">Integraciones</span><span lang="en">Integrations</span></li><li><span lang="es">Plataformas</span><span lang="en">Platforms</span></li><li><span lang="es">Automatización</span><span lang="en">Automation</span></li></ul>
+          <a class="svc-more" href="/soluciones-digitales/"><span lang="es">Integraciones y automatización</span><span lang="en">Integrations and automation</span><svg class="ic"><use href="#i-arrow"/></svg></a>
         </article>
       </div>
     </div>
@@ -833,6 +838,7 @@ dialog.aviso::backdrop{background:rgba(3,4,10,.66);-webkit-backdrop-filter:blur(
           <li><svg class="ic"><use href="#i-check"/></svg>Mercado Ads</li>
           <li><svg class="ic"><use href="#i-check"/></svg><span lang="es">Preguntas y pedidos</span><span lang="en">Questions and orders</span></li>
         </ul>
+        <a class="svc-more" href="/mercado-libre/"><span lang="es">Ver gestión de Mercado Libre</span><span lang="en">See Mercado Libre management</span><svg class="ic"><use href="#i-arrow"/></svg></a>
       </article>
       <div class="mp-core">
         <img src="media/velcore-simbolo.webp" alt="" width="182" height="220">
@@ -850,6 +856,7 @@ dialog.aviso::backdrop{background:rgba(3,4,10,.66);-webkit-backdrop-filter:blur(
           <li><svg class="ic"><use href="#i-check"/></svg><span lang="es">Campañas</span><span lang="en">Campaigns</span></li>
           <li><svg class="ic"><use href="#i-check"/></svg><span lang="es">Inventario y pedidos</span><span lang="en">Inventory and orders</span></li>
         </ul>
+        <a class="svc-more" href="/amazon/"><span lang="es">Ver gestión de Amazon</span><span lang="en">See Amazon management</span><svg class="ic"><use href="#i-arrow"/></svg></a>
       </article>
     </div>
 
@@ -900,6 +907,7 @@ dialog.aviso::backdrop{background:rgba(3,4,10,.66);-webkit-backdrop-filter:blur(
       <h2 id="t-dev"><span lang="es">Construimos tecnología alrededor de tu negocio.</span><span lang="en">We build technology around your business.</span></h2>
       <p class="sec-sub"><span lang="es">Cada proyecto tiene necesidades diferentes. Diseñamos y desarrollamos experiencias, plataformas e integraciones pensando primero en el problema que deben resolver y después en la tecnología necesaria para hacerlo.</span><span lang="en">Every project has different needs. We design and build experiences, platforms and integrations by thinking first about the problem they must solve, and then about the technology it takes.</span></p>
       <a class="btn btn-primary" data-wa="dev" href="https://wa.me/5213347216023?text=Hola%2C%20vi%20el%20sitio%20de%20Velcore%20y%20quiero%20contarles%20sobre%20un%20proyecto%20web%20o%20de%20desarrollo." target="_blank" rel="noopener"><span lang="es">Cuéntanos qué necesitas construir</span><span lang="en">Tell us what you need to build</span><svg class="ic ic-arrow"><use href="#i-arrow"/></svg></a>
+      <p class="dev-links"><a class="svc-more" href="/desarrollo-web/"><span lang="es">Páginas web y tiendas en línea</span><span lang="en">Websites and online stores</span><svg class="ic"><use href="#i-arrow"/></svg></a><a class="svc-more" href="/soluciones-digitales/"><span lang="es">Integraciones y sistemas a la medida</span><span lang="en">Integrations and custom systems</span><svg class="ic"><use href="#i-arrow"/></svg></a></p>
       <ul class="caps">
         <li><span class="cap-n">01</span><h3><span lang="es">Sitios web</span><span lang="en">Websites</span></h3><p><span lang="es">Experiencias claras, ágiles y pensadas para tus usuarios.</span><span lang="en">Clear, fast experiences designed for your users.</span></p></li>
         <li><span class="cap-n">02</span><h3><span lang="es">Plataformas</span><span lang="en">Platforms</span></h3><p><span lang="es">Herramientas para centralizar y simplificar tu operación.</span><span lang="en">Tools to centralize and simplify your operation.</span></p></li>
@@ -1157,10 +1165,10 @@ dialog.aviso::backdrop{background:rgba(3,4,10,.66);-webkit-backdrop-filter:blur(
       <nav aria-label="Servicios">
         <h4><span lang="es">Servicios</span><span lang="en">Services</span></h4>
         <ul class="foot-links">
-          <li><a href="#marketplaces"><span class="n">01</span>Mercado Libre</a></li>
-          <li><a href="#marketplaces"><span class="n">02</span>Amazon</a></li>
-          <li><a href="#desarrollo"><span class="n">03</span><span lang="es">Desarrollo web</span><span lang="en">Web development</span></a></li>
-          <li><a href="#desarrollo"><span class="n">04</span><span lang="es">Soluciones digitales</span><span lang="en">Digital solutions</span></a></li>
+          <li><a href="/mercado-libre/"><span class="n">01</span>Mercado Libre</a></li>
+          <li><a href="/amazon/"><span class="n">02</span>Amazon</a></li>
+          <li><a href="/desarrollo-web/"><span class="n">03</span><span lang="es">Desarrollo web</span><span lang="en">Web development</span></a></li>
+          <li><a href="/soluciones-digitales/"><span class="n">04</span><span lang="es">Soluciones digitales</span><span lang="en">Digital solutions</span></a></li>
           <li><a href="#servicios"><span class="n">05</span>Branding</a></li>
           <li><a href="#servicios"><span class="n">06</span><span lang="es">Redes sociales</span><span lang="en">Social media</span></a></li>
         </ul>
@@ -1458,6 +1466,7 @@ dialog.aviso::backdrop{background:rgba(3,4,10,.66);-webkit-backdrop-filter:blur(
   }));
   aviso.querySelector('[data-close-aviso]').addEventListener('click', () => aviso.close ? aviso.close() : aviso.removeAttribute('open'));
   aviso.addEventListener('click', e => { if (e.target === aviso) aviso.close(); });
+  if (location.hash === '#aviso') { try { aviso.showModal(); } catch(e){ aviso.setAttribute('open', ''); } }
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
