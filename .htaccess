@@ -17,6 +17,8 @@ Options -Indexes
   RewriteRule ^(servicios|branding-diseno|branding)/?$ https://velcore.com.mx/#servicios [R=301,L,NE]
   RewriteRule ^(mercadolibre|mercado_libre|gestion-mercado-libre)/?$ https://velcore.com.mx/mercado-libre/ [R=301,L]
   RewriteRule ^(desarrollo|diseno-web|paginas-web)/?$ https://velcore.com.mx/desarrollo-web/ [R=301,L]
+  RewriteRule ^(gestion-de-marketplaces|marketplaces)/?$ https://velcore.com.mx/#marketplaces [R=301,L,NE]
+  RewriteRule ^(page-sitemap|post-sitemap|category-sitemap|sitemap_index|wp-sitemap)\.xml$ https://velcore.com.mx/sitemap.xml [R=301,L]
 
   # Contenido de plantilla del sitio anterior que ya no existe: 410 para que Google lo retire pronto
   RewriteRule ^20[0-9][0-9]/ - [G,L]
